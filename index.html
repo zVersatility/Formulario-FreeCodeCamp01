@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Formulario de encuesta</h1>
+      <p id="description">Proyecto certificador de diseño web responsive por <a target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a> </p>
+    </header>
+    <main class="container">
+        <form id="survey-form">
+          <div>
+            <label  id="name-label" for="name" >Nombre</label>
+            <input class="form__input" id="name" type="text" required placeholder="Ingresa tu nombre">
+          </div>
+          <div>
+            <label id="email-label" for="email">Email</label>
+            <input  class="form__input" id="email" type="email" required placeholder="Ingresa tu correo electrónico">
+          </div>
+          <div>
+            <label id="number-label" for="number">Edad</label>
+            <input  class="form__input" type="number" id="number" min="13" max="120" placeholder="Edad">
+          </div>
+          
+          <div>
+            <label>Ingresa tu grado de estudios</label>
+            <select id="dropdown" class="form__input">
+                <option value="1" name="primaria">Primaria</option>
+                <option value="2" name="ecundaria">Secundaria</option>
+                <option value="3" name="preparatoria" >Preparatoria</option>
+                <option value="4" name="bachillerato">Bachillerato</option>
+                <option value="5" name="educacion__superior">Educación superior</option>
+                <option value="6" name="maestria">Maestria</option>
+                <option value="7" name="doctorado">Doctorado</option>
+            </select>
+          </div>
+          <div class="form__radios">
+            <label class="form__radios_label1">¿Tienes conocimientos previos en programación?</label>
+            <label for="radio_si" class="form__Radios__labels"><input id="radio_si" value="si" type="radio" name="conpv">Si</label>
+            <label for="radio_no" class="form__Radios__labels"><input id="radio_no" value="no" type="radio" checked name="conpv">No</label>
+            
+          </div>
+          <div>
+            <label class="form__checkbox_label1" >Selecciona los lenguajes de programación que desea dominar</label>
+            <label for="len1" class="form__checkbox_labels"><input id="len1" type="checkbox" value="l1"> JavaScript</label>
+            <label for="len2" class="form__checkbox_labels"><input id="len2" type="checkbox" value="l2"> PHP</label>
+            <label for="len3" class="form__checkbox_labels"><input id="len3" type="checkbox" value="l3"> C++</label>
+            <label for="len4" class="form__checkbox_labels"><input id="len4" type="checkbox" value="l4"> C#</label>
+            <label for="len5" class="form__checkbox_labels"><input id="len5" type="checkbox" value="l5"> Java</label>
+            <label for="len6" class="form__checkbox_labels"><input id="len6" type="checkbox" value="l6"> Visual</label>
+          </div>
+          <div>
+            <label for="des" class="form__des_label" >Agrege una pequeña descripción de Ud.</label>
+            <textarea class="form__textarea" id="des" placeholder="Soy una persona..." style="height: 108px;"></textarea>
+          </div>          
+          <div>
+            <button class="form__button" id="submit">Submit</button>
+          </div>
+          
+        </form>
+    </main>
+  </body>
+
+</html>
