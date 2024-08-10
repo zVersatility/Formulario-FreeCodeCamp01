@@ -151,6 +151,24 @@ input[type="radio"], input[type="checkbox"] {
   font-size: 1.1rem;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; 
+  
+}
+
+footer .footer-icon {
+  width: 1.5rem; 
+  height: auto;
+  margin-left: 0.5rem;
+}
+
+footer a {
+  display: inline-block;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   h1 {
